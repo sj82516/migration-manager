@@ -26,8 +26,8 @@ async function createMigrationFile (type) {
     '.' +
     type;
 
-  await fs.copyFile (
-    path.join ('./template', `${type}_template.${type}`),
+    await fs.copyFile (
+    path.join (__filename, '../template', `${type}_template.${type}`),
     path.join (global.MIGRATION_FOLDER_PATH, fileName)
   );
 

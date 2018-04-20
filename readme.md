@@ -8,6 +8,7 @@ This package only do two things.
 Only support mysql now.
 
 ## How to use
+You have to Nodejs at least 8.4 or native support async/await.
  `> npm install -g migration-manager`   
 
 Inside your project, you have to create `./config/config.json` and `./migrations`.  
