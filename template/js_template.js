@@ -1,4 +1,5 @@
-const Sequelize = require ('sequelize');
+const path = require("path");
+const Sequelize = require (path.join(__dirname,'../node_modules','sequelize'));
 
 // @param {Object} queryInterface : method please consult http://docs.sequelizejs.com/class/lib/query-interface.js~QueryInterface.html
 // @param {Object} transaction : Sequelize transaction. You have to wrap transaction into all your statement for the data integrity.
@@ -24,7 +25,7 @@ async function update (queryInterface, transaction) {
     'test-js',
     'attr1',
     {
-        type: Sequelize.NUMBER(10)
+        type: Sequelize.INTEGER
     },
     {
       transaction,
