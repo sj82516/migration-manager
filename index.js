@@ -9,7 +9,7 @@ const util = require ('./util');
 async function main () {
   await sequelize.sync ();
 
-  global.MIGRATION_FOLDER_PATH = path.join (__dirname, 'migrations');
+  global.MIGRATION_FOLDER_PATH = path.join (process.cwd(), 'migrations');
 
   program.version ('0.0.1').description ('Contact management system');
 
