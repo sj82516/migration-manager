@@ -1,0 +1,11 @@
+{
+    "database": "stage_psk_events",
+    "user": "root",
+    "password": "my-password",
+    "options": {
+        "host": "127.0.0.1",
+        "port": 3306,
+        "dialect": "mysql",
+        "multipleStatements": true
+    }
+}
