@@ -11,14 +11,14 @@ Only support mysql now.
  `> npm install -g migration-manager`   
 
 Inside your project, you have to create `./config/config.json` and `./migrations`.  
-`./config/config.json` store database configuration. You can consult this repo for example.  
+`./config/config.json` is Sequelize configuration format. You can consult this repo for example.  
 `./migrations` folder would store all migration files. Currently doesn't support custom path.  
 
 Then execute migration-manager inside your project. The path matters.  
 `> migration-manager a <type>` would copy template based on type. Currently support `sql` which you can write multi raw queries and `js` which support Sequelize migration file format(slightly different).  
 
 `> migration-manager e `  to execute migrations. All migrations would be wrapped into one big transactions for data integrity!    
-After successful execution, the migrations file would be record inside db to avoid repeat execution. 
+After successfully executed, the migrations file would be record inside db to avoid repeat execution. 
 
 ## TODO
 1. Add fully test.

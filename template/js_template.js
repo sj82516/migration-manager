@@ -24,7 +24,7 @@ async function update (queryInterface, transaction) {
     'test-js',
     'attr1',
     {
-        type: Sequelize.NUMBER
+        type: Sequelize.NUMBER(10)
     },
     {
       transaction,

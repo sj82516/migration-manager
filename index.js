@@ -17,7 +17,7 @@ async function main () {
     .command ('add <type>')
     .alias ('a')
     .description (
-      'Create migration file from template. Currently support .js(written in sequelize) || .sql(raw sql)'
+      'Create migration file from template. Currently support "js"(sequelize migration format) || "sql"(raw sql)'
     )
     .action (async type => {
       await closeConnectionWrapper (
