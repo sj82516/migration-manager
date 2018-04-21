@@ -17,9 +17,12 @@ Inside your project, you have to create `./config/config.json` and `./migrations
 
 Then execute migration-manager inside your project. The path matters.  
 `> migration-manager a <type>` would copy template based on type. Currently support `sql` which you can write multi raw queries and `js` which support Sequelize migration file format(slightly different).  
+![Imgur](https://i.imgur.com/Y0kSbT5.jpg)  
 
 `> migration-manager e `  to execute migrations. All migrations would be wrapped into one big transactions for data integrity!    
 After successfully executed, the migrations file would be record inside db table `migration` to avoid repeat execution. 
+![Imgur](https://i.imgur.com/FY6mxyX.jpg)  
+![Imgur](https://i.imgur.com/Zw35mDd.jpg)
 
 ## TODO
 1. Add fully test.
