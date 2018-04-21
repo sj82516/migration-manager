@@ -64,7 +64,7 @@ async function migration(){
         });
       }
 
-      console.log(`finish ${diffMigrationList}`);
+      console.log(`finish ${f}`);
     }
     console.log("migration finished. Writing record to database.");
 
