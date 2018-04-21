@@ -51,7 +51,7 @@ async function migration(){
   let transaction = await sequelize.transaction();
   try{
     for(let f of diffMigrationList){
-      console.log(`start to migrate ${diffMigrationList}`);
+      console.log(`start to migrate ${f}`);
       let migrateFilePath = path.join(global.MIGRATION_FOLDER_PATH, f);
       
       if(f.slice(-3) == ".js"){
