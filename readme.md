@@ -8,7 +8,7 @@ This package only do two things.
 Only support mysql now.
 
 ## How to use
-You have to Nodejs at least 8.4 or native support async/await.
+You have to install nodejs at least 8 which native support async/await.
  `> npm install -g migration-manager`   
 
 Inside your project, you have to create `./config/config.json` and `./migrations`.  
@@ -24,6 +24,17 @@ After successfully executed, the migrations file would be record inside db table
 ![Imgur](https://i.imgur.com/FY6mxyX.jpg)  
 ![Imgur](https://i.imgur.com/Zw35mDd.jpg)
 
+## Test
+Using docker as test environments tool.
+You have to install docker first and run `docker run --name my-
+mysql -e MYSQL_ROOT_PASSWORD=my-password -d -p 3306:3306 mysql` to start mysql locally.  
+
+Then run 
+```
+> docker build test .
+> docker run --link my-mysql:mysql --rm test ./test/test.sh
+```
+
 ## TODO
-1. Add fully test.
+~~1. Add fully test.~~  
 2. Support other db, at least compat all Sequelize support list.

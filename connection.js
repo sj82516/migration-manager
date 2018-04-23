@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const path = require('path');
 
-let configPath = path.join(__dirname, "config/config.json");
+let configPath = path.join(process.cwd(), "config/config.json");
 const config = require(configPath);
 
 if(!config || !config.user){

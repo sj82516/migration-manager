@@ -3,7 +3,7 @@
     "user": "root",
     "password": "my-password",
     "options": {
-        "host": "127.0.0.1",
+        "host": "my-mysql",
         "port": 3306,
         "dialect": "mysql",
         "logging": false,

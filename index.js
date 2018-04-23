@@ -3,6 +3,7 @@
 const path = require ('path');
 const program = require ('commander');
 
+const packageJson = require('./package.json');
 const sequelize = require ('./connection');
 const util = require ('./util');
 
@@ -11,7 +12,7 @@ async function main () {
 
   global.MIGRATION_FOLDER_PATH = path.join (process.cwd(), 'migrations');
 
-  program.version ('0.0.1').description ('Contact management system');
+  program.version (packageJson.version).description ('Contact management system');
 
   program
     .command ('add <type>')
